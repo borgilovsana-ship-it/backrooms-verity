@@ -35,9 +35,12 @@ button{border:0;border-radius:13px;background:#d9c66a;color:#17150e;font-weight:
 </div>
 <div id="start"><div class="dialog"><h1>Бэкрумс с Верити</h1><p>Исследуй жёлтые коридоры. Поверни телефон горизонтально для игры.</p><p class="small">Слева — движение. Справа — осмотр.</p><button id="play">▶ Начать игру</button></div></div>
 <div id="rotate"><div><div style="font-size:54px">📱 ↻</div><h2>Поверни телефон горизонтально</h2><p>Игра сделана для альбомного режима.</p></div></div>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
 <script type="module">
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
-import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js';
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 const canvas=document.querySelector('#game'), statusEl=document.querySelector('#status');
 const scene=new THREE.Scene(); scene.background=new THREE.Color(0xc7bd70); scene.fog=new THREE.Fog(0xc7bd70,18,70);
