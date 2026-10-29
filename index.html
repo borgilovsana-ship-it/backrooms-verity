@@ -10,19 +10,18 @@
 html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000;color:#fff;font-family:system-ui,-apple-system,sans-serif}
 body{min-height:100dvh;display:flex;align-items:center;justify-content:center}
 .layout{display:flex;flex-direction:column;align-items:center;gap:28px;padding:16px;width:100%;transform:translateY(55px)}
-.hands{display:flex;align-items:center;justify-content:center;gap:clamp(35px,12vw,100px);width:100%}
+.hands{display:flex;align-items:center;justify-content:center;gap:clamp(55px,19vw,140px);width:100%}
 .hand{border:0;background:transparent;box-shadow:none;min-width:0;min-height:0;padding:0;font-size:clamp(60px,17vw,110px);line-height:1;transition:transform .18s ease;touch-action:manipulation;cursor:pointer}
 #leftHand{transform:translateX(0) rotate(-8deg)}
 #rightHand{transform:translateX(0) rotate(8deg)}
-.hands.clapping #leftHand{transform:translateX(34px) rotate(0deg) scale(.92)}
-.hands.clapping #rightHand{transform:translateX(-34px) rotate(0deg) scale(.92)}
-.hands.clapping{gap:0}
+.hands.clapping #leftHand{transform:translateX(22px) rotate(0deg) scale(.92)}
+.hands.clapping #rightHand{transform:translateX(-22px) rotate(0deg) scale(.92)}
 button{border:2px solid #ffffff55;border-radius:20px;background:#202020;color:#fff;min-height:76px;min-width:76px;padding:12px;font-size:clamp(28px,6vw,44px);touch-action:manipulation;cursor:pointer;box-shadow:0 5px 0 #090909}
 #clap{font-size:clamp(17px,3.4vw,24px);font-weight:800;min-width:145px;background:#f0d45c;color:#17130a;border-color:#fff0a0}
 button:active{filter:brightness(1.15)}
 #clap:active{transform:translateY(4px);box-shadow:0 1px 0 #090909}
 #message{position:fixed;top:calc(env(safe-area-inset-top,0px) + 18px);left:0;right:0;text-align:center;color:#ddd;font-size:14px;min-height:22px}
-@media(max-width:380px){.layout{gap:24px;transform:translateY(55px)}.hands{gap:30px}#clap{min-width:125px}}
+@media(max-width:380px){.layout{gap:24px;transform:translateY(55px)}.hands{gap:45px}#clap{min-width:125px}}
 </style>
 </head>
 <body>
